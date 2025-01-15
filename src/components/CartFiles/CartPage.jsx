@@ -54,7 +54,6 @@ export default function CartPage() {
                   >
                     Delete
                   </Button>
-                  
                 </TableCell>
               </TableRow>
             ))}

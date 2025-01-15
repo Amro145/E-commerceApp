@@ -7,7 +7,6 @@ import ProudctInfopage from "./components/ProudctsFiles/ProudctInfopage";
 import Catogrey from "./components/CatogryFiles/Catogrey";
 import CatItem from "./components/CatogryFiles/CatogreyItems.jsx";
 import CartPage from "./components/CartFiles/CartPage";
-import Cardproject from "./components/Card";
 import GetAllProducts from "./components/Context/GetAllProducts.jsx";
 import GetCatogreyName from "./components/Context/GetCatogreyName.jsx";
 import GetCatogreyProducts from "./components/CatogryFiles/GetCatogreyProducts.jsx";
@@ -24,15 +23,12 @@ function App() {
   return (
     <>
       <GetAllProducts>
-        <GetPath>
           <GetCart>
             <GetComments>
               <GetCatogreyProducts>
                 <GetCatogreyName>
                   <BrowserRouter>
                     <Navbarpage />
-                    <Cardproject />
-
                     <Routes>
                       <Route
                         path="/"
@@ -50,7 +46,7 @@ function App() {
                       {/* <Route path="/:404" element={<NotFound />} /> */}
 
                       <Route
-                        path="/proudcts/:proudctID"
+                        path="/proudct/:proudctID"
                         element={<ProudctInfopage />}
                       />
                     </Routes>
@@ -59,7 +55,6 @@ function App() {
               </GetCatogreyProducts>
             </GetComments>
           </GetCart>
-        </GetPath>
       </GetAllProducts>
     </>
   );
